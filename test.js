@@ -5,7 +5,7 @@
 // }
 
 //   console.log(numSq(30,2));
-   
+
 
 // Recursion practice
 // writing recursion for adding arrays
@@ -26,9 +26,9 @@
 // function makeWordCounter() {
 //     let totalWords = 0;
 //     return function (text) {
-        
+
 //     };
-    
+
 // }
 // const counter = makeWordCounter;
 // counter("Hello world !")
@@ -54,9 +54,9 @@
 //         function secondPar(b) {
 //             return a * b;
 //         };
-        
+
 //     };
-    
+
 // };
 // console.log(specialMultiplier(3, 5)); //15
 
@@ -83,3 +83,40 @@
 
 // I am starting out the dom from here to learn to interact with the html page
 
+
+
+
+const textChanger = document.getElementById("textbtn")
+textChanger.addEventListener("click", function () {
+
+    alert("Button was clicked!")
+
+    const changingH1 = document.querySelector("h1");
+    changingH1.innerText = "Text is changed !"
+
+
+
+
+});
+
+
+
+
+const textColorChanger = document.getElementById("colorbtn");
+
+textColorChanger.addEventListener("click", function () {
+    alert("button was clicked!")
+    const colorChanger = document.querySelector("h1");
+    colorChanger.style.color = "red";
+});
+
+const bgColorChanger = document.getElementById("pbgbtn");
+
+bgColorChanger.addEventListener("click", function () {
+
+    alert("button was clicked!")
+    const pBgChanger = document.getElementById("para1");
+    pBgChanger.style.backgroundColor = "green";
+    pBgChanger.style.color = "white";
+
+});
