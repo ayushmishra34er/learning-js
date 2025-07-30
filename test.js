@@ -120,3 +120,13 @@ bgColorChanger.addEventListener("click", function () {
     pBgChanger.style.color = "white";
 
 });
+
+const elementInserter = document.getElementById("info-box");
+elementInserter.innerHTML = "<b>O Dear!</b> and <i>thats awesome !</i>";
+
+
+// const elementAdder = document.createElement("p").innerText = "This is js Made !";
+// const pSelector = document.querySelectorAll("p");
+// pSelector[3].classList.add("paragraph");
+// pSelector[3].id = "para3";
+

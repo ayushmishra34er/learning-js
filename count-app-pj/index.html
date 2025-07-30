@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter-app-project</title>
+    <style>
+        body {}
+
+        .parent-div {
+
+            justify-items: center;
+            
+
+        }
+
+        .counter-btn {
+            border: none;
+            justify-items: center;
+            margin: 10px;
+            padding: 10px;
+            font-size: x-large;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(41, 191, 218, 0.627);
+            color: white;
+            font-weight: bolder;
+            box-shadow: 0px 0px 30px .5px white;
+            border-radius: 40px;
+
+        }
+
+        .counter-btn:hover {
+            box-shadow: 0px 0px 60px .5px white;
+        }
+
+        .counter-btn:active {
+            background-color: rgba(233, 92, 36, 0.781);
+            animation: pop .2s ease;
+            transform: scale(1.2);
+
+
+        }
+
+
+        /* @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+            25%{
+                transform: scale(.8);
+            }
+
+            50% {
+                transform: scale(.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        } */
+    </style>
+</head>
+
+<body style="background-color: #212121; color: white">
+    <div class="parent-div">
+        <h1>Counter App</h1>
+        <div class="counter-meter">
+            <h1>0</h1>
+        </div>
+
+        <button class="counter-btn" id="increase">Increase</button>
+        <button class="counter-btn" id="reset">Reset</button>
+        <button class="counter-btn" id="decrease">Decrease</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
